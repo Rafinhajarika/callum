@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+.header{
+    padding: 15px 0;
+}
 .menu_felx{
     display: flex;
     justify-content: space-between;
@@ -137,7 +140,7 @@
     width: 100%;
     position: relative;
     background-image: url(images/intro-bg.jpg);
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
@@ -150,8 +153,8 @@
 }
 .banner::after{
     content: '';
-    background: black;
-    opacity: 0.7;
+    background: #111418;
+    opacity: 0.8;
     position: absolute;
     top: 0;
     left: 0;
@@ -228,6 +231,7 @@
 }
 .about_portion{
     padding: 104px 0px;
+    width: 67%;
 }
 .experience{
     display: flex;
@@ -499,6 +503,7 @@
 }
 .portfolio_portion{
     padding: 208px 0 104px;
+    width: 68%;
 }
 .gallery{
     justify-content: center;
@@ -632,6 +637,7 @@
 }
 .faq{
     padding: 104px 0;
+    width: 68%;
 }
 .accor_flex{
     display: flex;
@@ -646,14 +652,20 @@
     display: flex;
     justify-content: end;
 }
-.toggle_button{
+.toggle_button {
     color: #959596;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+   
+    opacity: 0.9;
+}
+.toggle_button h2{
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
     margin: 0;
     padding-left: 15px;
-    opacity: 0.9;
 }
 .toggle_button:focus{
     border: none;
@@ -749,6 +761,9 @@
     font-size: 16px;
     line-height: 24px;
 }
+.any{
+    margin-bottom: 48px;
+}
 .swiper-pagination-bullet-active {
 	background: #f5df4e;
 }
@@ -761,7 +776,7 @@
 }
 .swiper-button-prev {
 	width: 2%;
-	height: 6%;
+	height: 5%;
 	color: black;
 	font-size: 16px;
 	background: white;
@@ -770,7 +785,7 @@
 }
 .swiper-button-next {
 	width: 2%;
-	height: 6%;
+	height: 5%;
 	color: black;
 	font-size: 16px;
 	background: white;
@@ -937,6 +952,19 @@ footer{
         font-size: 94px;
         font-weight: 122px;
     }
+    .portfolio_portion{
+        width: 100%;
+    }
+    .faq-content{
+        display: flex;
+        justify-content: center;
+    }
+    .about_portion{
+        width: 100%;
+    }
+    .faq{
+        width: 100%;
+    }
     .callum_Smith{
         width: 100%;
     }
@@ -1044,6 +1072,19 @@ footer{
     .typed_js{
         height: 100px;
     }
+    .portfolio_portion{
+        width: 100%;
+    }
+    .faq-content{
+        display: flex;
+        justify-content: center;
+    }
+    .about_portion{
+        width: 100%;
+    }
+    .faq{
+        width: 100%;
+    }
     .callum_Smith{
         width: 100%;
         padding-left: 0px;
@@ -1120,9 +1161,7 @@ footer{
         flex-wrap: wrap;
         flex-direction: column-reverse;
     }
-    .faq-content {
-        text-align: center;
-    }
+    
     .client_portion{
         padding: 56px 15px;
     }
@@ -1257,5 +1296,19 @@ footer{
         left: 22%;
     }
 }
+
 /* laptop_responsive_finished */
+/* desktop_responsive_started */
+@media only screen and (min-width:1367px) and (max-width:1919px){
+    .about_portion{
+        width: 79.5%;
+    }
+    .portfolio_portion{
+        width: 81%;
+    }
+    .faq{
+        width: 81%;
+    }
+}
+/* desktop_responsive_finished */
 /* responsive_portion_finished */
