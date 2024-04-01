@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <!--header_portion_started-->
+        <nav class="header navbar navbar-dark bg-tranparent fixed-top bgcolor">
+        <div class="container">
+            <div class="menu_felx">
+                <div class="logo">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo-light.png" alt="">
+                    </a>
+                </div>
+                <div class="content_of_menu">
+                    <a class="number" href="tel:(060) 444 434 444">
+                        <i class="fa-solid fa-phone-flip"></i>(060) 444 434 444
+                    </a>
+                    <button class="menu_bar navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="menu_bar navbar-toggler-icon">
+                        </span>
+                    </button>
+                </div>
+            </div>
+            
+            
+            <div class="slider_menu offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="close_button offcanvas-header">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="menu_items_flex offcanvas-body">
+                    <div>
+                        <ul class="menu_unoderlist navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="menu_items nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="menu_items nav-link" href="#">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="menu_items nav-link" href="#">What I Do</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="menu_items nav-link" href="#">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="menu_items nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="menu_items nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="menu_items nav-link" href="#">Client Speak</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="menu_items nav-link" href="#">Contact Me</a>
+                            </li>
+                        </ul>
+                       <ul class="social_links">
+                        <li class="social_media">
+                            <a href="" class="shown_content_twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                                <p class="tolltip">
+                                    Twitter
+                                </p>
+                            </a>
+                        </li>
+                        <li class="social_media">
+                            <a href="" class="shown_content_facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                                <p class="tolltip">
+                                    Facebook
+                                </p>
+                            </a>
+                        </li>
+                        <li class="social_media">
+                            <a href="" class="shown_content_facebook">
+                                <i class="fa-brands fa-instagram"></i>
+                                <p class="tolltip">
+                                    Instagram
+                                </p>
+                            </a>
+                        </li>
+                        <li class="social_media">
+                            <a href="" class="shown_content_linkedin">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <p class="tolltip">
+                                    Linkedin
+                                </p>
+                            </a>
+                        </li>
+                        <li class="social_media">
+                            <a href="" class="shown_content_dribbble">
+                                <i  class="fa-brands fa-dribbble"></i>
+                                <p class="tolltip">
+                                    Dribbble
+                                </p>
+                            </a>
+                        </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    <!--header_portion_finished-->
+    <!--banner_portion_started-->
+        <section class="banner">
+        <div class="contents">
+            <div class="freelancer">
+                <p class="hi">
+                    Hi, I'm a Freelancer
+                </p>
+                <div class="typed_js" x-data="{
+                    text: '',
+                    textArray: ['Designer', 'Developer', 'Callum'],
+                    textIndex: 0,
+                    charIndex: 0,
+                    pause: 1000,
+                    typeSpeed: 100,
+                    direction: 'forward'
+                  }"
+                  x-init="setInterval(function(){
+                    let current = $data.textArray[$data.textIndex];
+                    if ($data.charIndex > current.length) {
+                      $data.direction = 'backward';
+                    }
+                    $data.text = current.substring(0, $data.charIndex);
+                    if ($data.direction == 'forward') {
+                      $data.charIndex += 1;
+                    } else {
+                      $data.charIndex -= 1;
+                      if ($data.charIndex == 0) {
+                        $data.direction = 'forward';
+                        $data.textIndex = ($data.textIndex + 1) % $data.textArray.length;
+                      }
+                    }
+                  }, $data.typeSpeed);">
+                <h1 class="typed" x-text="text"></h1>
+                </div>  
+                <p class="base">
+                    based in Los Angeles, USA.
+                </p>
+                <div class="view">
+                    <a href="" class="text">
+                        View My Works
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        </section>
+    <!--banner_portion_finished-->
+    <!--about_portion_started-->
+        <section class="about_portion container">
+        <div class="row">
+            <div class="about-content col-sm-12">
+                <h2 class="about">
+                    About Me
+                </h2>
+            </div>
+            <div class="about-content col-sm-12">
+                <h2 class="know">
+                    Know Me More
+                </h2>
+            </div>
+            <div class="callum_Smith col-sm-12 col-lg-6">
+                <div class="">
+                    <h2 class="about_hi">
+                        Hi, I'm <strong><span class="smith">Callum Smith</span></strong>
+                    </h2>
+                    <p class="designer_developer">
+                        I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me. Delivering work within time and budget which meets client’s requirements is our moto.
+                    </p>
+                </div>
+            </div>
+            <div class="experience col-sm-12 col-lg-6">
+                <div>
+                    <h2 class="number_of_experience">
+                        22
+                    </h2>
+                    <p class="year_of_experience">
+                        Years of <strong>Experiance</strong>
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3">
+                <p class="name_to_from">
+                    Name:
+                </p>
+                <h5 class="deatils_of_ceo">
+                    Callum Smith
+                </h5>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3">
+                <p class="name_to_from">
+                    Email:
+                </p>
+                <a href="mailto:chat@callum.com" class="deatils_of_ceo">
+                    chat@callum.com
+                </a>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3">
+                <p class="name_to_from">
+                    Date of birth:
+                </p>
+                <h5 class="deatils_of_ceo">
+                    11 November, 1987
+                </h5>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3">
+                <p class="name_to_from">
+                    From:
+                </p>
+                <h5 class="deatils_of_ceo">
+                    Los Angeles, USA.
+                </h5>
+            </div>
+        </div>
+        </section>
+    <!--about_portion_finished-->
+    <!--what_i_do_portion_started-->
+        <section class="what_do_portion container">
+        <div class="row">
+            <div class="about-content col-sm-12">
+                <h2 class="about">
+                    What I Do?
+                </h2>
+            </div>
+            <div class="about-content col-sm-12">
+                <h2 class="know">
+                    How I can help your next project
+                </h2>
+            </div>
+        </div>
+        <div class="projects">
+            <div class="projects_grid">
+                <div class="graphics_portion">
+                    <i class="fa-solid fa-palette"></i>
+                    <h2 class="content_of_projects">
+                        Graphic Design
+                    </h2>
+                    <p class="para_of_projects">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+                </div>
+                <div class="graphics_portion">
+                    <i class="fa-solid fa-display"></i>
+                    <h2 class="content_of_projects">
+                        Web Design
+                    </h2>
+                    <p class="para_of_projects">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+                </div>
+                <div class="graphics_portion">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2 class="content_of_projects">
+                        UI/UX Design
+                    </h2>
+                    <p class="para_of_projects">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+                </div>
+                <div class="graphics_portion">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2 class="content_of_projects">
+                        App Design & Develop
+                    </h2>
+                    <p class="para_of_projects">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+                </div>
+                <div class="graphics_portion">
+                    <i class="fa-solid fa-chart-area"></i>
+                    <h2 class="content_of_projects">
+                        Business Analysis
+                    </h2>
+                    <p class="para_of_projects">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+                </div>
+                <div class="graphics_portion">
+                    <i class="fa-solid fa-bullhorn"></i>
+                    <h2 class="content_of_projects">
+                        SEO Marketing
+                    </h2>
+                    <p class="para_of_projects">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+    <!--what_i_do_portion_finished-->
+    <!--Resume_portion_started-->
+        <section class="resume_portion container">
+            <div class="row">
+                <div class="about-content col-sm-12">
+                    <h2 class="about">
+                        Resume
+                    </h2>
+                </div>
+                <div class="about-content col-sm-12">
+                    <h2 class="know">
+                        A summary of My Resume
+                    </h2>
+                </div>
+            </div>
+            <div class="resumes">
+                <div class="row">
+                    <div class="education col-sm-12 col-lg-6">
+                        <h2>
+                            My Education
+                        </h2>
+                        <div class="resumes_of_person">
+                            <div class="first_col">
+                                <h3 class="degree">
+                                    Master in Computer Engineering
+                                </h3>
+                                <p class="institute">
+                                    Harvard University / 2015 - 2017
+                                </p>
+                                <p class="description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="resumes_of_person">
+                            <div class="first_col">
+                                <h3 class="degree_2">
+                                    Bachelor in Computer Engineering
+                                </h3>
+                                <p class="institute">
+                                    University of California / 2014 - 2015
+                                </p>
+                                <p class="description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="resumes_of_person">
+                            <div class="first_col">
+                                <h3 class="degree_2">
+                                    International Science
+                                </h3>
+                                <p class="institute">
+                                    Harvard University / 2013 - 2014
+                                </p>
+                                <p class="description">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the dummy text.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="education col-sm-12 col-lg-6">
+                        <h2>
+                            My Experience
+                        </h2>
+                        <div class="resumes_of_person">
+                            <div class="first_col">
+                                <h3 class="degree">
+                                    Sr. Font End Developer
+                                </h3>
+                                <p class="institute">
+                                    Apple Inc / 2020 - current
+                                </p>
+                                <p class="description">
+                                    Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="resumes_of_person">
+                            <div class="first_col">
+                                <h3 class="degree_2">
+                                    Jr. Font End Developer
+                                </h3>
+                                <p class="institute">
+                                    Dribbble Inc / 2018 - 2020
+                                </p>
+                                <p class="description">
+                                    Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="resumes_of_person">
+                            <div class="first_col">
+                                <h3 class="degree_2">
+                                    HTML Developer
+                                </h3>
+                                <p class="institute">
+                                    Adobe Inc / 2017 - 2018
+                                </p>
+                                <p class="description">
+                                    Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--Resume_portion_finished-->
+    <!--skills_portion_started-->
+        <section class="skillss container">
+            <h2 class="skills">
+                My Skills
+            </h2>
+            <div class="progress_bar_grid">
+                <div>
+                    <div class="parcent_of_skills">
+                        <h6>
+                            Web Design
+                        </h6>
+                        <p>
+                            65%
+                        </p>
+                    </div>
+                    <div class="bg_percantage">
+                        <p class="bg_percantage_2"></p>
+                    </div>
+                    <div class="parcent_of_skills">
+                        <h6>
+                            JavaScript
+                        </h6>
+                        <p>
+                            80%
+                        </p>
+                    </div>
+                    <div class="bg_percantage">
+                        <p class="bg_percantage_3"></p>
+                    </div>
+                    <div class="parcent_of_skills">
+                        <h6>
+                            Angular Js
+                        </h6>
+                        <p>
+                            60%
+                        </p>
+                    </div>
+                    <div class="bg_percantage">
+                        <p class="bg_percantage_4"></p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="parcent_of_skills">
+                        <h6>
+                            HTML/CSS
+                        </h6>
+                        <p>
+                            95%
+                        </p>
+                    </div>
+                    <div class="bg_percantage">
+                        <p class="bg_percantage_5"></p>
+                    </div>
+                    <div class="parcent_of_skills">
+                        <h6>
+                            React JS
+                        </h6>
+                        <p>
+                            70%
+                        </p>
+                    </div>
+                    <div class="bg_percantage">
+                        <p class="bg_percantage_6"></p>
+                    </div>
+                    <div class="parcent_of_skills">
+                        <h6>
+                            Bootstrap
+                        </h6>
+                        <p>
+                            99%
+                        </p>
+                    </div>
+                    <div class="bg_percantage">
+                        <p class="bg_percantage_7"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cv">
+                <a href="" class="cv_text">
+                    Download CV
+                </a>
+            </div>
+        </section>
+    <!--skills_portion_finished-->
+    <!--portfolio_portion_started-->
+        <section class="portfolio_portion container">
+        <div class="row">
+            <div class="about-content col-sm-12">
+                <h2 class="about">
+                    Portfolio
+                </h2>
+            </div>
+            <div class="about-content col-sm-12">
+                <h2 class="know">
+                    Some of my most recent projects
+                </h2>
+            </div>
+        </div>
+        <ul class="gallery nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="items_link nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                    All
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="items_link nav-link" id="pills-details-tab" data-bs-toggle="pill" data-bs-target="#pills-details" type="button" role="tab" aria-controls="pills-details" aria-selected="false">
+                    Details
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="items_link nav-link" id="pills-mockups-tab" data-bs-toggle="pill" data-bs-target="#pills-mockups" type="button" role="tab" aria-controls="pills-mockups" aria-selected="false">
+                    Mockups
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="items_link nav-link" id="pills-youtube-tab" data-bs-toggle="pill" data-bs-target="#pills-youtube" type="button" role="tab" aria-controls="pills-youtube" aria-selected="false">
+                    Youtube Videos
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="items_link nav-link" id="pills-vimeo-tab" data-bs-toggle="pill" data-bs-target="#pills-vimeo" type="button" role="tab" aria-controls="pills-vimeo" aria-selected="false">
+                    Vimeo Videos
+                </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                <div class="pics_grid">
+                    <div class="pics_grid_portion">
+                        <img src="images/project-1.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-file-lines"></i>
+                                    <h2 class="detailed">
+                                        Detailed Project 1
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pics_grid_portion">
+                        <img src="images/project-2.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-image"></i>
+                                    <h2 class="detailed">
+                                        Mockups Design 1
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pics_grid_portion">
+                        <img src="images/project-3.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-video"></i>
+                                    <h2 class="detailed">
+                                        YouTube Video
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pics_grid_portion">
+                        <img src="images/project-4.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-video"></i>
+                                    <h2 class="detailed">
+                                        Vimeo Video
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pics_grid_portion">
+                        <img src="images/project-5.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-file-lines"></i>
+                                    <h2 class="detailed">
+                                        Detailed Project 2
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pics_grid_portion">
+                        <img src="images/project-6.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-image"></i>
+                                    <h2 class="detailed">
+                                        Mockups Design 2
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-details" role="tabpanel" aria-labelledby="pills-details-tab" tabindex="0">
+                <div class="pics_grid">
+                    <div class="pics_grid_portion">
+                        <img src="images/project-1.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-file-lines"></i>
+                                    <h2 class="detailed">
+                                        Detailed Project 1
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="pics_grid_portion">
+                        <img src="images/project-5.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-file-lines"></i>
+                                    <h2 class="detailed">
+                                        Detailed Project 2
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-mockups" role="tabpanel" aria-labelledby="pills-mockups-tab" tabindex="0">
+                <div class="pics_grid">
+                    <div class="pics_grid_portion">
+                        <img src="images/project-2.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-image"></i>
+                                    <h2 class="detailed">
+                                        Mockups Design 1
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pics_grid_portion">
+                        <img src="images/project-6.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-image"></i>
+                                    <h2 class="detailed">
+                                        Mockups Design 2
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-youtube" role="tabpanel" aria-labelledby="pills-youtube-tab" tabindex="0">
+                <div class="pics_grid">
+                    <div class="pics_grid_portion">
+                        <img src="images/project-3.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-video"></i>
+                                    <h2 class="detailed">
+                                        YouTube Video
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-vimeo" role="tabpanel" aria-labelledby="pills-vimeo-tab" tabindex="0">
+                <div class="pics_grid">
+                    <div class="pics_grid_portion">
+                        <img src="images/project-4.jpg" alt="" class="project_pic">
+                        <div class="content_of_pic">
+                            <div class="ddd">
+                                <div>
+                                    <i class="fa-solid fa-video"></i>
+                                    <h2 class="detailed">
+                                        Vimeo Video
+                                    </h2>
+                                    <p class="category">
+                                        Category
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>  
+    <!--portfolio_portion_finished-->
+    <!--interested_portion_started-->
+        <section class="interested container-fluid">
+            <div class="working">
+                <div class="working_title">
+                    <div>
+                        <h2 class="with_title">
+                            Interested in working with me?
+                        </h2>
+                        <div class="view">
+                            <a href="" class="text">
+                                Hire Me!
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    <!--interested_portion_finished-->
+    <!--FAQ_portion_started-->
+        <section class="faq container">
+            <div class="row">
+                <div class="faq-content col-sm-12">
+                    <h2 class="about">
+                       FAQ
+                    </h2>
+                </div>
+                <div class="faq-content col-sm-12">
+                    <h2 class="know">
+                        Have any questions?
+                    </h2>
+                </div>
+            </div>
+            <div class="accor_flex">
+                
+                <div class="toggle_content">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion_content accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="toggle_button accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h2 class="toggle_button" data-bs-toggle="collapse" data-bs-target="#collapseOne"  >
+                                    What is Callum?
+                                </h2>
+                                
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet.
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" accordion_content accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="toggle_button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h2 class="toggle_button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    How Can I Help You?
+                                </h2>
+                                
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. 
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" accordion_content accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="toggle_button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h2 class="toggle_button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Simple process for workflow?
+                                </h2>
+                                
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Iisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna imperdiet.
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" accordion_content accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="toggle_button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <h2 class="toggle_button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    Is Callum a Multi-purpose template?
+                                </h2>
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                            </div>
+                          </div>
+                        </div>
+                        <div class=" accordion_content accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="toggle_button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <h2 class="toggle_button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                    Why responsive one page template?
+                                </h2>
+                                
+                            </button>
+                          </h2>
+                          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="toggle_image">
+                    <img src="images/faq.png" alt="" class="bulb">
+                </div>
+            </div>
+        </section>
+    <!--FAQ_portion_finished-->
+    <!--clinet_speak_portion_started-->
+        <section class="client_portion container-fluid">
+            <div class="row">
+                <div class="about-content col-sm-12">
+                    <h2 class="about">
+                        Client Speak
+                    </h2>
+                </div>
+                <div class="about-content col-sm-12">
+                    <h2 class="know_2">
+                        What Some of my Clients Say
+                    </h2>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div>
+                        <h2 class="comment_of_client">
+                            “Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure. simply dummy text of the printing and typesetting industry.”
+                        </h2>
+                        <p class="image">
+                            <img src="images/client-sm-1.jpg" alt="" class="client_img">
+                        </p>
+                        <h6 class="name_of_client">
+                            Jay Shah
+                        </h6>
+                        <p class="company_name">
+                            Founder at Icomatic Pvt Ltd
+                        </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                        <h2 class="comment_of_client">
+                            “I am happy Working with printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam persequeris essent possim iriure. simply dummy text of the printing and typesetting industry.”
+                        </h2>
+                        <p class="image">
+                            <img src="images/client-sm-2.jpg" alt="" class="client_img">
+                        </p>
+                        <h6 class="name_of_client">
+                            Patrick Cary
+                        </h6>
+                        <p class="company_name">
+                            Freelancer from USA
+                        </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                        <h2 class="comment_of_client">
+                            “Only trying it out since a few days. But up to now excellent. Seems to work flawlessly. priced simply dummy text of the printing and typesetting industry.”
+                        </h2>
+                        <p class="image">
+                            <img src="images/client-sm-3.jpg" alt="" class="client_img">
+                        </p>
+                        <h6 class="name_of_client">
+                            Dennis Jacques
+                        </h6>
+                        <p class="company_name">
+                            Noon Inc
+                        </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div>
+                        <h2 class="comment_of_client">
+                            “I have used them twice now. Good rates, very efficient service and priced simply dummy text of the printing and typesetting industry quidam interesset his et. simply dummy text of the printing and typesetting industry. Excellent.”
+                        </h2>
+                        <p class="image">
+                            <img src="images/client-sm-4.jpg" alt="" class="client_img">
+                        </p>
+                        <h6 class="name_of_client">
+                            Chris Tom
+                        </h6>
+                        <p class="company_name">
+                            User from UK
+                        </p>
+                    </div>
+                  </div>
+                </div>
+                
+                
+            </div>
+            <div class="navigation">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+              
+        </section>
+    <!--clinet_speak_portion_finished-->
+    <!--get_in_touch_portion_started-->
+        <section class="get_touch">
+            <div class="container">
+                <div class="contact row">
+                    <div class="let_get col-12 col-sm-12 col-lg-6">
+                        <h2 class="touch">
+                            Let's get in touch
+                        </h2>
+                        <p class="discussing">
+                            I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.
+                        </p>
+                        <h3 class="living">
+                            Living In:
+                        </h3>
+                        <address>
+                            30 Shacham street, Los Angeles, USA.
+                        </address>
+                        <h3 class="call">
+                            Call:
+                        </h3>
+                        <a href="tel:(+060) 444 434 444" class="mobile_number">
+                            (+060) 444 434 444
+                        </a>
+                    </div>
+                    <div class="estimate col-12 col-sm-12 col-lg-6">
+                        <h2 class="some_say">
+                            Estimate your Project?
+                        </h2>
+                        <!-- <form action="">
+                            <div class="row">
+                                <div class="feild_form col-12">
+                                    <label for="name">
+                                        <p class="name">
+                                            What is Your Name:
+                                        </p>
+                                        
+                                    </label>
+                                    <input type="text" name="" id="name" required="" class="name_input">
+                                </div>
+                                <div class="feild_form col-12">
+                                    <label for="email">
+                                        <p class="name">
+                                            Your Email Address:
+                                        </p>
+                                        
+                                    </label>
+                                    <input type="email" name="" id="name" required="" class="name_input">
+                                </div>
+                                <div class="feild_form col-12">
+                                    <label for="textarea">
+                                        <p class="name">
+                                            How can I Help you?:
+                                        </p>
+                                        
+                                    </label>
+                                    <textarea name="" id="name" cols="30" rows="10" class="name_input"></textarea>
+                                </div>
+                                <div class="send feild_form col-12">
+                                    <button type="submit" class="submit">
+                                        Send<i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form> -->
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    What is Your Name:
+                                </label>
+                                <input type="text" class="field form-control" id="exampleFormControlInput1" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Your Email Address:</label>
+                                <input type="email" class="field form-control" id="exampleFormControlInput1" required="">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">How can I Help you?:</label>
+                                <textarea class="field form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                            </div>
+                            <div class="send">
+                                <button type="submit" class="submit btn btn-primary mb-3">Send<i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="copy col-sm-12 col-lg-6">
+                        <p>
+                            Copyright © 2023 <a href="https://harnishdesign.net/" class="callum_link" target="_blank">Callum.</a> All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="harnish col-sm-12 col-lg-6">
+                        Designed by <a href="https://harnishdesign.net/" class="callum_link" target="_blank">Harnish Design</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--get_in_touch_portion_finsished-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine-ie11.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
