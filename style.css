@@ -57,7 +57,7 @@
     color: #f5df4e;
 }
 .social_links{
-    display: flex;
+    display: flex !important;
     padding: 0;
     gap: 25px;
     padding-top: 40px;
